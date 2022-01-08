@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./font/GothamBook.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+	--primary-color:#6CB9DE;
+	--secondary-color:#7A538C;
+	--terciary-color: #a8a8a8;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'GothamBook';
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.logo-thumbnail {
+	width: 275px;
+	margin: 15px 0 8px 50px;
+}
+
+.logo {
+	max-width: 100%;
+	height: auto;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 50px 0 0;
+	width: 500px;
+}
+
+.nav-item {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		padding: 5px 10px;
+		font-weight: bold;
+		color: #646464;
+}
+
+.nav-item:focus {
+	background-color: var(--secondary-color);
+	border-radius: 100px;
+	color: #fff;
+}
+
+.nav-item:focus::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	bottom: -10px;
+	background-color: var(--secondary-color);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.main-img-section {
+	position: relative;
+	width: 100%;
+	height: 110vh;	
+	background-image: url("./images/main-img.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-img-section::after {
+	  content: '';
+		position: absolute;
+		display: block;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: #fff;
+		background-image: url("./images/dento-fresh-icon.png");
+		background-repeat: no-repeat;
+		background-position: 16px 17px;
+		background-size: 70% 70%;
+		cursor: pointer;
+		right: 50px;
+		bottom: 25px;
+}
+
+.container-services {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 30vh;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.services {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 20px 50px;
+	color: var(--primary-color);
+	font-weight: bold;
+	font-size: 22px;	
+}
+
+.services::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	opacity: 0.8;
+}
+
+.special {
+	left: -60px;
+}
+
+.secondary-img-section {
+	width: 100%;
+	height: 65vh;
+	padding: 30px 0 20px 30px;
+	background-image: url('./images/mapa.png');
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+	height: 55vh;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.form-title {
+	margin-bottom: 40px;
+	font-size: 26px;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.input-text {
+	margin-bottom: 25px;
+	padding: 5px;	
+	border: solid var(--primary-color) 1px;
+	border-radius: 4px;
+	width: 225px;
+	height: 45px;
+	outline: none;
+	font-size: 20px;
+}
+
+.button {
+	width: 100px;
+	padding: 12px;
+	margin-top: 12px;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover {
+	opacity: 0.9;
+}
+
+.ubication-section {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 25vh;	
+}
+
+.ubication-title {
+	margin: 0 150px 0 100px;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--primary-color);
+}
+
+.sample-text {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+footer {
+	display: flex;
+  justify-content: space-between;
+	background-color: var(--terciary-color);
+	height: 30vh;
+	width: 100%;
+	padding: 0 80px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.footer-wraper-info {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.footer-container-link {
+	display: flex;
+	margin: 35px 35px 0 25px;
+	flex-direction: column;	
+}
+
+.footer-link {
+	margin-bottom: 8px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.footer-text {
+	width: 180px;
+	margin-top: 35px;
+  font-size: 15px;
+	line-height: 19px;
+}
+
+.footer-container-icons {
+	margin-top: 20px;
+}
+
+.footer-icon {
+	display: inline-block;
+	margin-right: 20px;	
+	width: 40px;
+	height: 40px;
+}
+
+.footer-icon img {
+	max-width: 100%;
+	height: auto;
+}
