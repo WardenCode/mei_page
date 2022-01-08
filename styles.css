@@ -229,7 +229,9 @@ footer {
 
 .footer-wraper-info {
 	display: grid;
-	grid-template-columns: repeat(2, 120px) minmax(400px, auto);	
+	grid-template-columns: repeat(2, 120px) minmax(400px, auto);
+	min-width: 645px;
+	max-width: 650px;
 	width: 70%;
 }
 
