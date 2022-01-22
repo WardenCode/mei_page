@@ -1,0 +1,70 @@
+.frank {
+  font-family: "franklin-gothic-book";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  /* color: #6c757d; */
+}
+
+.hexagon {
+  max-width: 150px;
+}
+
+.hexagon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.mr-15 {
+  margin-right: 15rem;
+}
+
+.ml-10 {
+  margin-left: 10rem;
+}
+
+.experts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #caf0f8;
+}
+
+.expert-container {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+}
+
+.expert {
+  max-width: 150px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .mr-15 {
+    margin-right: 0;
+  }
+
+  .ml-10 {
+    margin-left: 0;
+  }
+}

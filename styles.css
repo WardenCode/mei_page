@@ -1,3 +1,5 @@
+@import url("nosotros.css");
+
 @font-face {
   font-family: "Gotham-XLight";
   src: url("./font/Gotham-XLight.otf") format("truetype");
@@ -6,9 +8,9 @@
 }
 
 :root {
-	--primary-color:#6CB9DE;
-	--secondary-color:#7A538C;
-	--terciary-color: #a8a8a8;
+  --primary-color: #6cb9de;
+  --secondary-color: #7a538c;
+  --terciary-color: #a8a8a8;
 }
 
 * {
@@ -20,134 +22,134 @@
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo-thumbnail {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 280px;
-	max-width: 300px;
-	width: 50%;
-	height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  max-width: 300px;
+  width: 50%;
+  height: 65px;
 }
 
 .logo {
-	max-width: 100%;
-	height: 60%;
+  max-width: 100%;
+  height: 60%;
 }
 
 .nav-bar {
-	display: grid;
-	grid-template-columns: repeat(5, auto);
-	grid-column-gap: 40px;
-	margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-column-gap: 40px;
+  margin-right: 20px;
 }
 
 .nav-item {
-	position: relative;
-	display: flex;
-	align-self: center;
-	justify-content: center;
-	padding: 5px 8px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #646464;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #646464;
 }
 
 .nav-item:focus {
-	background-color: var(--secondary-color);
-	border-radius: 100px;
-	color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+  color: #fff;
 }
 
 .nav-item:focus::after {
-	content: '';
-	position: absolute;
-	display: inline-block;
-	bottom: -10px;
-	background-color: var(--secondary-color);
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  background-color: var(--secondary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
 .main-img-section {
-	position: relative;
-	width: 100%;
-	min-height: 90vh;
-	max-height: 90vh;	
-	background-image: url("./images/main-img.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  max-height: 90vh;
+  background-image: url("./images/main-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .main-img-section::after {
-	  content: '';
-		position: absolute;
-		display: block;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		background-color: #fff;
-		background-image: url("./images/dento-fresh-icon.png");
-		background-repeat: no-repeat;
-		background-position: 16px 17px;
-		background-size: 70% 70%;
-		cursor: pointer;
-		right: 50px;
-		bottom: 25px;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("./images/dento-fresh-icon.png");
+  background-repeat: no-repeat;
+  background-position: 16px 17px;
+  background-size: 70% 70%;
+  cursor: pointer;
+  right: 50px;
+  bottom: 25px;
 }
 
 .services {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 20px 5px;
-	height: 30vh;
-	width: 80%;
-	margin: 0 auto;
-	padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px 5px;
+  height: 30vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .service {
-	display: grid;
-	grid-template-columns: 20% 80%;	
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-	color: var(--primary-color);
-	font-weight: bold;
-	font-size: 22px;	
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .service-title {
-	font-size: 18px;
-	margin-left: 5px;	
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 .service-circle {
-	display: inline-block;
-	justify-self: center;	
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: var(--primary-color);
-	opacity: 0.8;
+  display: inline-block;
+  justify-self: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  opacity: 0.8;
 }
 
 .secondary-img-section {
-	width: 100%;
-	height: 65vh;
-	padding: 30px 0 30px 30px;
-	background-image: url('./images/mapa.png');
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+  width: 100%;
+  height: 65vh;
+  padding: 30px 0 30px 30px;
+  background-image: url("./images/mapa.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 form {
@@ -164,120 +166,120 @@ form {
 }
 
 .form-title {
-	margin-bottom: 20px;
-	font-size: 26px;
-	font-weight: bold;
-	color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .input-text {
-	margin-bottom: 10px;
-	padding: 5px;	
-	border: solid var(--primary-color) 1px;
-	border-radius: 4px;
-	width: 225px;
-	height: 45px;
-	outline: none;
-	font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: solid var(--primary-color) 1px;
+  border-radius: 4px;
+  width: 225px;
+  height: 45px;
+  outline: none;
+  font-size: 20px;
 }
 
 .button {
-	width: 100px;
-	padding: 12px;
-	border: none;
-	background-color: var(--primary-color);
-	color: #fff;
-	border-radius: 10px;
-	font-size: 20px;
-	font-weight: bold;
-	cursor: pointer;
+  width: 100px;
+  padding: 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover {
-	opacity: 0.9;
+  opacity: 0.9;
 }
 
 .ubication-section {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 25vh;	
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
 }
 
 .ubication-title {
-	margin: 0 150px 0 100px;
-	font-weight: bold;
-	font-size: 18px;
-	color: var(--primary-color);
+  margin: 0 150px 0 100px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary-color);
 }
 
 .sample-text {
-	font-size: 15px;
-	font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 footer {
-	display: flex;
-	justify-content: space-between;	
-	background-color: var(--terciary-color);
-	height: 30vh;
-	width: 100%;
-	padding: 0 60px;
-	color: #fff;
-	font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--terciary-color);
+  height: 30vh;
+  width: 100%;
+  padding: 0 60px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .footer-wraper-info {
-	display: grid;
-	grid-template-columns: repeat(2, 120px) minmax(400px, auto);
-	min-width: 645px;
-	max-width: 650px;
-	width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 120px) minmax(400px, auto);
+  min-width: 645px;
+  max-width: 650px;
+  width: 70%;
 }
 
 .footer-container-link {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin-top: 35px;
 }
 
 .footer-link {
-	margin-bottom: 8px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 15px;
+  margin-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .footer-text-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
   width: 400px;
   margin-top: 35px;
 }
 
 .footer-text-container p {
-	min-width: 160px;
-	word-wrap: wrap;
+  min-width: 160px;
+  word-wrap: wrap;
   font-size: 15px;
   line-height: 19px;
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .footer-container-icons {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 30px;
-	margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 20px;
 }
 
 .footer-icon {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-icon img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
